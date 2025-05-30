@@ -1,0 +1,52 @@
+{
+  "name": "cover-next",
+  "version": "1.0.0",
+  "description": "tools that will help you see new items and make it easier for you to use the website to load bittorrent.",
+  "main": "cover-next.js",
+  "repository": "https://github.com/kon3ko/cover-next",
+  "author": "Neko",
+  "license": "MIT",
+  "scripts": {
+    "dev": "export NODE_OPTIONS=--openssl-legacy-provider && webpack --mode=development",
+    "build": "export NODE_OPTIONS=--openssl-legacy-provider && webpack --mode=production --node-env=production",
+    "build:dev": "export NODE_OPTIONS=--openssl-legacy-provider && webpack --mode=development",
+    "build:prod": "export NODE_OPTIONS=--openssl-legacy-provider && webpack --mode=production --node-env=production",
+    "watch": "export NODE_OPTIONS=--openssl-legacy-provider && webpack --watch --mode=development --node-env=development",
+    "serve": "webpack serve"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@babel/plugin-transform-runtime": "^7.14.5",
+    "@babel/preset-env": "^7.14.7",
+    "@webpack-cli/generators": "^2.2.0",
+    "autoprefixer": "^10.4.20",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.2.2",
+    "babel-preset-env": "^1.7.0",
+    "css-loader": "^5.2.6",
+    "javascript-obfuscator": "^4.1.1",
+    "postcss": "^8.4.41",
+    "postcss-loader": "^8.1.1",
+    "postcss-preset-env": "^10.0.1",
+    "prettier": "^2.3.2",
+    "sass": "^1.35.2",
+    "sass-loader": "^12.1.0",
+    "style-loader": "^3.0.0",
+    "tailwindcss": "^3.4.10",
+    "webpack": "^5.44.0",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2",
+    "webpack-obfuscator": "^3.5.1"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.14.6",
+    "@fancyapps/ui": "^4.0.0-alpha.4",
+    "crypto-browserify": "^3.12.0",
+    "crypto-js": "^4.2.0",
+    "hash.js": "^1.1.7",
+    "jquery": "^3.6.0"
+  }
+}
